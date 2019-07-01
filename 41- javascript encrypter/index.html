@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript Encrypter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        
+            <div class="textdiv">
+                <label for="inputText">Text</label>
+                <textarea id="inputText"  ></textarea>
+            </div>
+            <div class="buttonsdiv">
+                <div class="keydiv">
+                    <label for="keyinput">the key</label>
+                    <input id="keyinput" onkeypress="checkNumber(event)" type="text">
+                </div>
+                <button onclick="encryptClick()">encrypt</button>
+                <button onclick="decryptClick()">decrypt</button>
+            </div>
+            <div class="codediv">
+                <label for="inputcode">Code</label>
+                <textarea id="inputcode" ></textarea>
+            </div>
+        
+    </div>
+</body>
+</html>
